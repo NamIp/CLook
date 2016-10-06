@@ -8,12 +8,12 @@ This application was built during HackItGirls
 
 Built With
 
-*Python 2.7
-*MySQL5.7
-*MySQL-Python Connector 6.0.2
-*JavaScript
-*CSS3, HTML5
-*jQuery
+Python 2.7
+MySQL5.7
+MySQL-Python Connector 6.0.2
+JavaScript
+CSS3, HTML5
+jQuery
 
 Contributing
 
