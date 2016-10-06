@@ -92,13 +92,11 @@ def get_partner_details(id):
     if resp.status_code != 200:
             # This means something went wrong.
         raise ApiError('GET /tasks/ {}'.format(resp.status_code))
-    #for idx, instructor in enumerate(resp.json()['elements']):
         # print('{} - ID: {} Name: {}'.format(idx, course['id'], course['name'].encode('ascii', 'xmlcharrefreplace')))
         # print('instructorIds: {} partnerIds:{} photoUrl: {} partnerLogo: {}\n description: {} certificates: {} domainTypes: {}'.format(course['instructorIds'], course['partnerIds'], course['photoUrl'], course['partnerLogo'], course['description'].encode('ascii', 'xmlcharrefreplace'), course['certificates'], course['domainTypes'])) 
         # print "-------------------------\n"
         #print "Error"
     partner = str(resp.json()['elements'])
-    #print "hello\n"
         #print "Instructor "+str(idx)+":"
     # for field in fields:
     #     if field not in instructor:
@@ -143,19 +141,18 @@ def get_courses_details(cnx,num_pages, limit=100):
 
                 print field+": " + str(display(course[field]))
                 #inserting data fetched into database
-            sql = "INSERT INTO Courses(id, name, partnerLogo, photoUrl, description, startDate) VALUES ('%s', '%s', '%s', '%s', '%s',)"
-                             % / (display(course['id']), display(course['name']), display(course['partnerLogo']), display(course['photoUrl']),
-                        display(course['description']), NULL)
+            sql = "INSERT INTO Courses(id, name, partnerLogo, photoUrl, description, startDate) VALUES  ((display(course['id']), display(course['name']), display(course['partnerLogo']), display(course['photoUrl']))"
+                        #display(course['description']), NULL)
             try:
                # Execute the SQL command
                cursor.execute(sql)
                # Commit your changes in the database
                cnx.commit()
-               print "Changes Committed"
+               #print "Changes Committed"
             except:
                # Rollback in case there is any error
                cnx.rollback()
-               print "Changes roll-back"
+               #print "Changes roll-back"
             print "\n-------------------------\n"
 
 cnx=create_connection()
