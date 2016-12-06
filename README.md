@@ -1,4 +1,4 @@
-# CLook
+# :computer: CLook - Application to look up the best MOOC
 
 ### Table of Contents
 1. [About](#about)
