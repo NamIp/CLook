@@ -33,6 +33,16 @@ Following this, users can also filter on the basis of university, instructor, st
 
 ## Demo
 
+* ### CLook finds the best online course in a discipline of your choice in a matter of seconds!
+![](/assets/jumbotron.png)
+
+* ### Save time, learn more!
+![](/assets/desc.png)
+
+* ### What does CLook offer?
+1. ![](/assets/features.png)
+
+2. ![](/assets/courseList.png)
 
 ##Contributing
 
