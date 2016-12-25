@@ -40,9 +40,11 @@ Following this, users can also filter on the basis of university, instructor, st
 ![](/assets/desc.png)
 
 * ### What does CLook offer?
-1. ![](/assets/features.png)
+![](/assets/features.png)
 
-2. ![](/assets/courseList.png)
+
+
+![](/assets/courseList.png)
 
 ##Contributing
 
